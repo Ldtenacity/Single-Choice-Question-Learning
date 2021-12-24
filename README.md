@@ -1,5 +1,3 @@
 # Single-Choice-Question-Learning
-## you can download
-链接：https://pan.baidu.com/s/1dJi-DzsjK9WBuKSuXKjhcQ 
-提取码：n7hr 
---来自百度网盘超级会员V3的分享
+
+## anyone can download the corpus.word2vec by the `pan link`: https://pan.baidu.com/s/1dJi-DzsjK9WBuKSuXKjhcQ, `password`:n7hr 
