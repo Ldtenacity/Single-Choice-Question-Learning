@@ -9,6 +9,6 @@
 
 
 ### 训练结果
-##### evaluation accuracy of `test set` =
-##### evaluation accuracy of `training set` = 0.43
+##### evaluation accuracy of `test set` = 0.441
+##### evaluation accuracy of `training set` = 0.766
 <img src="image.assets/res.png" alt="res" style="zoom:67%;" />
