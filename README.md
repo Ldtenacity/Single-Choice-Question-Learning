@@ -2,6 +2,13 @@
 
 ##### anyone can download the corpus.word2vec by the `pan link`: https://pan.baidu.com/s/1dJi-DzsjK9WBuKSuXKjhcQ, `password`:n7hr
 
+### 代码结构
+<img src="image.assets/structure.png" alt="structure" style="zoom:67%;" />
+
+### 数据来源
+
+
+
 ### 参数设置
 
 | **k**         | **rnn_size**   | **max_grad_norm** |
@@ -22,3 +29,6 @@
 ##### evaluation accuracy of `test set` = 0.441
 ##### evaluation accuracy of `training set` = 0.766
 <img src="image.assets/res.png" alt="res" style="zoom:67%;" />
+
+### 结果分析
+##### 由于背景知识标注较少，所以最终训练结果较低(0.44)。代码模拟了一个学生学习中学地理课本知识点去做地理竞赛题的过程，最终得分为44分(百分制)，高于随机选择25分(百分制)，但结果也不算很高，究其原因，我分析后认为主要有2个：第一是因为地理竞赛题中有一些中学课本中没有涉及到的知识点，第二是课本中知识体系用BiLstm简单建模效率较低。
