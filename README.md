@@ -6,7 +6,8 @@
 <img src="image.assets/structure.png" alt="structure" style="zoom:67%;" />
 
 ### 数据来源
-
+##### 题库来源: http://igeocn.com/igeocn/tiku/tk-1st/igeocn-qa-1.html
+##### 背景知识来源: 中学地理教材
 
 
 ### 参数设置
