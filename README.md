@@ -9,6 +9,8 @@
 | 5       | 100           | 5              |
 | **embedding_dim** | **max_sentence_length** | **lr** |
 | 50  | 100             | 0.4               |
+| **epoches_num** | **checkpoints_num** | **batch_size** |
+| 20  | 20             | 256               |
 
 ### 训练中
 ##### evaluation accuracy of `test set` = 0.363
