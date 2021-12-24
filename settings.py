@@ -1,0 +1,16 @@
+k = 5
+rnn_size=100
+upper_bound=0.1
+max_grad_norm=5
+embedding_dim=50
+max_sentence_len=100
+dropout_keep_prob=0.45
+learning_rate=0.4
+lr_down_rate=0.5
+lr_down_times=4
+l2_reg_lamda=0.1
+length = 256
+num_epochs = 20
+evaluate_every = 50
+checkpoint_every = 100
+num_checkpoints = 20
