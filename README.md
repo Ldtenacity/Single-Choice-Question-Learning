@@ -4,7 +4,7 @@
 
 ### 参数设置
 
-| k         | rnn_size   | max_grad_norm           |
+| **k**         | **rnn_size**   | **max_grad_norm**           |
 | ---------- | -------------- | --------------- |
 | 5       | 100           | 5              |
 | **embedding_dim** | **max_sentence_length** | **lr** |
