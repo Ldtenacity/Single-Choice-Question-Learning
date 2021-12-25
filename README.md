@@ -7,7 +7,7 @@
 
 ### 数据来源
 ##### 题库来源: http://igeocn.com/igeocn/tiku/tk-1st/igeocn-qa-1.html
-##### 背景知识来源: 中学地理教材
+##### 背景知识来源: https://www.liuxue86.com/gaokao/dilizhishidian/
 
 
 ### 参数设置
