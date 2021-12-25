@@ -21,7 +21,8 @@
 | 20  | 20             | 256               |
 
 ### 训练中
-##### 按照 **7:3** 比例将题库划分为 `test set` 和 `training set`
+##### 按照 **7:3** 比例将题库 `geo-multi-question.txt` 划分为 `test set` 和 `training set`
+##### 运行 `process_db.py` 将 `database_org.txt` 进行预处理，输入到 `database.txt`
 ##### evaluation accuracy of `test set` = 0.363
 ##### evaluation accuracy of `training set` = 0.437
 <img src="image.assets/running.png" alt="running" style="zoom:67%;" />
