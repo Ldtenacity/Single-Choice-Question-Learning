@@ -6,8 +6,8 @@
 <img src="image.assets/structure.png" alt="structure" style="zoom:67%;" />
 
 ### 数据来源
-##### 题库来源: http://igeocn.com/igeocn/tiku/tk-1st/igeocn-qa-1.html 详情见`data/geo-multi-question.txt`
-##### 背景知识来源: https://www.liuxue86.com/gaokao/dilizhishidian/ 详情见`model/database_org.txt`
+##### 题库来源: http://igeocn.com/igeocn/tiku/tk-1st/igeocn-qa-1.html (详情见`data/geo-multi-question.txt`)
+##### 背景知识来源: https://www.liuxue86.com/gaokao/dilizhishidian/ (详情见`model/database_org.txt`)
 
 
 ### 参数设置
