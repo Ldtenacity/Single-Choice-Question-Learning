@@ -21,6 +21,7 @@
 | 20  | 20             | 256               |
 
 ### 训练中
+##### 按照7:3 将题库划分为 `test set` 和 `training set`
 ##### evaluation accuracy of `test set` = 0.363
 ##### evaluation accuracy of `training set` = 0.437
 <img src="image.assets/running.png" alt="running" style="zoom:67%;" />
