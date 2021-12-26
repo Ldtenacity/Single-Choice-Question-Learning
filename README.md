@@ -12,13 +12,13 @@
 
 ### 参数设置
 
-| **k**         | **rnn_size**   | **max_grad_norm** |
+| **sim_num**         | **rnn_size**   | **sigma** |
 |---------- | -------------- | --------------- |
-| 5       | 100           | 5              |
-| **embedding_dim** | **max_sentence_length** | **lr** |
+| 5       | 100           | 0.45              |
+| **embedding_dim** | **max_len** | **lr** |
 | 50  | 100             | 0.4               |
-| **epoches_num** | **checkpoints_num** | **batch_size** |
-| 20  | 20             | 256               |
+| **reg_factor** | **train_period** | **batch_size** |
+| 0.5  | 50             | 256               |
 
 ### 训练中
 ##### 按照 **7:3** 比例将题库 `geo-multi-question.txt` 划分为 `test set` 和 `training set`
