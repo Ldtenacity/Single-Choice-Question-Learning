@@ -1,7 +1,7 @@
 sim_num = 5
 rnn_size=100
 upper_bound=0.1
-max_grad_norm=5
+iter_ub=5
 embedding_dim=50
 max_len=150
 sigma=0.45
