@@ -7,27 +7,21 @@ import process
 from model import Cell
 from settings import *
 
-print("loading embedding...")
-embedding, word2idx = process.load_embedding("models/corpus.word2vec")
+embedding, word2idx = process.load_embedding("models/corpus.word2vec")#加载embeddings
 stop_words = codecs.open("models/unused.txt", 'r', encoding='utf8').readlines()
 for i in range(0,len(stop_words)):
     stop_words[i]=stop_words[i].strip()
-print("computing similarity...")
 process.prepare_data("models/database.txt", "data/train.txt", stop_words)
-train_sim_ixs = process.cal_scores("data/train.txt", stop_words, k)
+train_sim_ixs = process.cal_scores("data/train.txt", stop_words, k)#计算最高相似性的几个知识
 test_sim_ixs = process.cal_scores("data/test.txt", stop_words, k)
-print("loading data...")
-train_questions, train_answers, train_labels, train_question_num = \
-    process.load_data("models/database.txt", "data/train.txt", word2idx, stop_words, train_sim_ixs, max_sentence_len)
+train_questions, train_answers, train_labels, train_question_num = process.load_data("models/database.txt", "data/train.txt", word2idx, stop_words, train_sim_ixs, max_sentence_len)
 
-test_questions, test_answers, test_labels, test_question_num = \
-    process.load_data("models/database.txt", "data/test.txt", word2idx, stop_words, test_sim_ixs, max_sentence_len)
+test_questions, test_answers, test_labels, test_question_num = process.load_data("models/database.txt", "data/test.txt", word2idx, stop_words, test_sim_ixs, max_sentence_len)
 
 
-questions, true_answers, false_answers = [], [], []
+questions, true_answers, false_answers = [], [], []#将数据按照epoch进行划分
 for q, ta, fa in process.pre_epoch(
-        train_questions, train_answers, train_labels, train_question_num, length):
-    questions.append(q), true_answers.append(ta), false_answers.append(fa)
+        train_questions, train_answers, train_labels, train_question_num, length):questions.append(q), true_answers.append(ta), false_answers.append(fa)
 
 def cal_params():
     print("evaluating..")
@@ -82,13 +76,11 @@ def update_params():
                     lstm.Train_F: falseAnswer,
                     lstm.dropout_keep_prob: dropout_keep_prob,
                 }
-                _, step, _, _, loss, summary = \
-                    sess.run([trainOp, globalStep, lstm.trueCosSim, lstm.falseCosSim, lstm.loss, summary_op], feed_dict)
+                _, step, _, _, loss, summary = sess.run([trainOp, globalStep, lstm.trueCosSim, lstm.falseCosSim, lstm.loss, summary_op], feed_dict)
                 print("step:", step, "loss:", loss)
                 summary_writer.add_summary(summary, step)
                 if step % evaluate_every == 0:
                     cal_params()
-
             saver.save(sess, "res/savedModel")
         lr *= lr_down_rate
 
@@ -98,25 +90,19 @@ with tf.Graph().as_default(), tf.device("/gpu:0"):
     with tf.compat.v1.Session(config=session_conf).as_default() as sess:
         globalStep = tf.compat.v1.Variable(0, name="global_step", trainable=False)
         lstm = Cell(length,max_sentence_len,embedding,embedding_dim,rnn_size,upper_bound)
-
-        # define training procedure
         tvars = tf.compat.v1.trainable_variables()
         grads, _ = tf.compat.v1.clip_by_global_norm(tf.gradients(lstm.loss, tvars), max_grad_norm)
         saver = tf.compat.v1.train.Saver()
-
-        # output directory for models and summaries
+        # 计算时间
         timestamp = str(int(time.time()))
         out_dir = os.path.abspath(os.path.join(os.path.curdir, "runs", timestamp))
         print("Writing to {}\n".format(out_dir))
-
-        # summaries
+        #记录参数
         loss_summary = tf.compat.v1.summary.scalar("loss", lstm.loss)
         summary_op = tf.compat.v1.summary.merge([loss_summary])
-
         summary_dir = os.path.join(out_dir, "summary", "train")
         summary_writer = tf.compat.v1.summary.FileWriter(summary_dir, sess.graph)
-
-        # training
+        #根据之前参数更新参数
         update_params()
-        # final evaluate
+        # 计算参数
         cal_params()
