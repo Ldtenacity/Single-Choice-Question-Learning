@@ -47,6 +47,7 @@ class Cell(object):
         self.result = self.dot_product(test_question2, test_answer2)
 
     def get_gradient(self, x, hidden_size):
+        #计算梯度(lstm网络单元的参数计算)
         input_x = tf.transpose(x, [1, 0, 2])
         input_x = tf.unstack(input_x)
         cell1 = tf.compat.v1.nn.rnn_cell.BasicLSTMCell(hidden_size, forget_bias=1.0, state_is_tuple=True)
@@ -59,6 +60,7 @@ class Cell(object):
         return output
 
     @staticmethod
+    #计算两个向量的点积
     def dot_product(q, a):
         q1 = tf.sqrt(tf.reduce_sum(tf.multiply(q, q), 1))
         a1 = tf.sqrt(tf.reduce_sum(tf.multiply(a, a), 1))
@@ -67,6 +69,7 @@ class Cell(object):
         return dotproduct
 
     @staticmethod
+    #下采样，缩小数据规模，此处使用pooling方法
     def down_sampling(org_matrix):
         height = int(org_matrix.get_shape()[1])
         width = int(org_matrix.get_shape()[2])
@@ -76,6 +79,7 @@ class Cell(object):
         return reduced_matrix
 
     @staticmethod
+    #反向传播，计算模型的loss值
     def bp(org, pred, upperbound):
         zero = tf.fill(tf.shape(org), 0.0)
         tfMargin = tf.fill(tf.shape(org), upperbound)
