@@ -2,9 +2,9 @@
 
 ##### anyone can download the corpus.word2vec by the `pan link`: https://pan.baidu.com/s/1dJi-DzsjK9WBuKSuXKjhcQ, `password`:n7hr
 
-## 网络的搭建使用到了 BAMnet 的思想，这个思想来自于 《Bidirectional Attentive Memory Networks for Question Answering over Knowledge Base》
+网络的搭建使用到了 BAMnet 的思想，这个思想来自于 《Bidirectional Attentive Memory Networks for Question Answering over Knowledge Base》
 <img src="image.assets/BAMnet.png" alt="BAMnet" style="zoom:67%;" />
-# 在知识的查询过程中同时考虑了背景知识和知识库的知识，在一定程度上解决了 incomplete KB 问题，这个思想参考了《improving QA over incomplete KBs with Knowledge-Aware Reader》
+在知识的查询过程中同时考虑了背景知识和知识库的知识，在一定程度上解决了 incomplete KB 问题，这个思想参考了《improving QA over incomplete KBs with Knowledge-Aware Reader》
 <img src="image.assets/SubGraphReader_KnowledgeAwareReader.png" alt="Readers" style="zoom:67%;" />
 ### 代码结构
 <img src="image.assets/structure.png" alt="structure" style="zoom:50%;" />
