@@ -7,7 +7,7 @@
 ### 在知识的查询过程中同时考虑了背景知识和知识库的知识，在一定程度上解决了 incomplete KB 问题，这个思想参考了《improving QA over incomplete KBs with Knowledge-Aware Reader》
 
 ### 代码结构
-<img src="image.assets/structure.png" alt="structure" style="zoom:67%;" />
+<img src="image.assets/structure.png" alt="structure" style="zoom:50%;" />
 
 ### 数据来源
 ##### 题库来源: http://igeocn.com/igeocn/tiku/tk-1st/igeocn-qa-1.html (详情见`data/geo-multi-question.txt`)
