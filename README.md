@@ -4,12 +4,23 @@
 
 # This Report will be organized in those 5 parts
 #### 1. Data Collection: data source
-#### 2. Data Pre-processing: crawler & data visualization
+#### 2. Data Pre-processing: crawler
 #### 3. Exploratory Analysis: model
 #### 4. Data Mining: training
 #### 5. Evaluation of Results: the evaluation index, the score, the rank, the result visualization
-#### 6. GUI
 
+
+## 1. Data Collection: data source
+### 数据来源
+##### 题库来源: http://igeocn.com/igeocn/tiku/tk-1st/igeocn-qa-1.html (详情见`data/geo-multi-question.txt`)
+##### 背景知识来源: https://www.liuxue86.com/gaokao/dilizhishidian/ (详情见`model/database_org.txt`)
+
+
+## 2. crawler
+### 使用爬虫爬取知识源
+
+
+## 3. Exploratory Analysis: model
 ### 网络的搭建使用到了 BAMnet 的思想，这个思想来自于 《Bidirectional Attentive Memory Networks for Question Answering over Knowledge Base》
 <img src="image.assets/BAMnet.png" alt="BAMnet" style="zoom:67%;" />
 
@@ -19,10 +30,8 @@
 ### 代码结构
 <img src="image.assets/structure.png" alt="structure" style="zoom:50%;" />
 
-### 数据来源
-##### 题库来源: http://igeocn.com/igeocn/tiku/tk-1st/igeocn-qa-1.html (详情见`data/geo-multi-question.txt`)
-##### 背景知识来源: https://www.liuxue86.com/gaokao/dilizhishidian/ (详情见`model/database_org.txt`)
 
+## 4. Data Mining: training
 
 ### 参数设置
 
@@ -42,6 +51,7 @@
 ##### evaluation accuracy of `training set` = 0.437
 <img src="image.assets/running.png" alt="running" style="zoom:67%;" />
 
+#### 5. Evaluation of Results: the evaluation index, the score
 
 ### 训练结果
 ##### 训练轮数 = 3199
@@ -55,4 +65,6 @@
 ###### 2. 课本中知识体系用BiLstm简单建模效率较低。
 
 ### Reference
+##### 《Bidirectional Attentive Memory Networks for Question Answering over Knowledge Base》
+##### 《improving QA over incomplete KBs with Knowledge-Aware Reader
 ##### 参考学习了一些对知识库进行NLP建模的模型
