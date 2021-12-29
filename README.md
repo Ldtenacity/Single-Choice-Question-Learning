@@ -7,7 +7,7 @@
 #### 2. Data Pre-processing: crawler
 #### 3. Exploratory Analysis: model
 #### 4. Data Mining: training
-#### 5. Evaluation of Results: the evaluation index, the score, the rank, the result visualization
+#### 5. Evaluation of Results: the evaluation index, the score
 
 
 ## 1. Data Collection: data source
