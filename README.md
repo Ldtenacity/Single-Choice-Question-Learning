@@ -64,7 +64,7 @@
 ###### 1. 地理竞赛题中有一些中学课本中没有涉及到的知识点
 ###### 2. 课本中知识体系用BiLstm简单建模效率较低。
 
-### Reference
+## Reference
 ##### 《Bidirectional Attentive Memory Networks for Question Answering over Knowledge Base》
 ##### 《improving QA over incomplete KBs with Knowledge-Aware Reader
 ##### 参考学习了一些对知识库进行NLP建模的模型
