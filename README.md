@@ -20,7 +20,7 @@
 
 
 ## 2. crawler
-##### 使用爬虫爬取知识源
+##### 使用爬虫爬取知识源，详情间crawler.py
 
 
 ## 3. Exploratory Analysis: model
