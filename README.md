@@ -2,6 +2,14 @@
 
 ##### anyone can download the corpus.word2vec by the `pan link`: https://pan.baidu.com/s/1dJi-DzsjK9WBuKSuXKjhcQ, `password`:n7hr
 
+# This Report will be organized in those 5 parts
+#### 1. Data Collection: data source
+#### 2. Data Pre-processing: crawler & data visualization
+#### 3. Exploratory Analysis: model
+#### 4. Data Mining: training
+#### 5. Evaluation of Results: the evaluation index, the score, the rank, the result visualization
+#### 6. GUI
+
 ### 网络的搭建使用到了 BAMnet 的思想，这个思想来自于 《Bidirectional Attentive Memory Networks for Question Answering over Knowledge Base》
 <img src="image.assets/BAMnet.png" alt="BAMnet" style="zoom:67%;" />
 
