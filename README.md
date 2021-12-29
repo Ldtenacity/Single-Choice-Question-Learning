@@ -56,6 +56,9 @@
 
 ## 5. Evaluation of Results: the evaluation index, the score
 
+### 评估指标
+##### 在测试集和训练集题目答题的正确率
+
 ### 训练结果
 ##### 训练轮数 = 3199
 ##### evaluation accuracy of `test set` = 0.441
