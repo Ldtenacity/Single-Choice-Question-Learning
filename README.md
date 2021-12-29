@@ -2,7 +2,8 @@
 
 ##### anyone can download the corpus.word2vec by the `pan link`: https://pan.baidu.com/s/1dJi-DzsjK9WBuKSuXKjhcQ, `password`:n7hr
 
-## 工作摘要：实现了一个可以学习课本知识，然后实现答题(4选1选择题)的模型。通过学习后，在测试集上达到了44分/100分的成绩，由于时间仓促，希望之后能够将模型进一步优化。
+## 工作摘要：实现了一个可以学习课本知识，然后实现答题的模型。
+## 成果：模型在学习知识后，在测试集上达到了44分/100分的成绩，希望之后能够将模型进一步优化，争取在测试集上达到60分/100分的成绩。
 
 # This Report will be organized in those 5 parts
 #### 1. Data Collection: data source
