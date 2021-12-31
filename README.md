@@ -20,7 +20,7 @@
 
 
 ## 2. crawler
-##### 使用爬虫爬取知识源，详情间crawler.py
+##### 使用爬虫爬取知识源，详情见crawler.py
 
 
 ## 3. Exploratory Analysis: model
@@ -60,7 +60,7 @@
 ##### 在测试集和训练集题目答题的正确率
 
 ### 训练结果
-##### 训练轮数 = 3199
+##### 总训练轮数 = 3199
 ##### evaluation accuracy of `test set` = 0.441
 ##### evaluation accuracy of `training set` = 0.766
 <img src="image.assets/res.png" alt="res" style="zoom:67%;" />
