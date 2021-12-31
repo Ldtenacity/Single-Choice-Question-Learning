@@ -75,4 +75,3 @@
 ## Reference
 ##### 《Bidirectional Attentive Memory Networks for Question Answering over Knowledge Base》
 ##### 《improving QA over incomplete KBs with Knowledge-Aware Reader》
-#####  参考学习了一些对知识库进行NLP建模的模型
