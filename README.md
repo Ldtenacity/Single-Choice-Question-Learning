@@ -1,6 +1,6 @@
 # Single-Choice-Question-Learning
 
-##### word2vec from wikipedia
+##### The `word2vec` comes from wikipedia
 
 #### 工作摘要：实现了一个可以学习课本知识，然后实现答题的模型。
 #### 成果：模型在学习知识后，在测试集（没有做过的题）上达到了44分/100分的成绩，在训练集（做过的题）上达到了77分/100分的成绩。希望之后能够将模型进一步优化，争取在测试集上达到60分/100分的成绩。
